@@ -1,214 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sanjeev Panday | Technical Architect & Solution Architect</title>
+    <title>Sanjeev Panday | Technical Architect &amp; Solution Architect</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="name">Sanjeev Panday</h1>
-                <p class="title">Tech Owner · Lead Developer</p>
-                <p class="subtitle">
-                   Technical Leader and Solution Architect experienced in delivering secure, scalable, cloud-ready enterprise systems, with strong expertise in Java/Spring Boot, microservices, cloud platforms, and leading high-performing engineering teams. <br>
-                   <br>
-                   I focus on aligning technology with real business outcomes through clean design, automation, DevOps, and strong engineering practices.
-                </p>
-
-                <a href="sanjeev-panday-resume.pdf" class="cv-button" download>
-                    ⬇ Download CV
-                </a>
-            </div>
-
-            <div class="hero-photo">
-                <img src="photo.png" alt="Profile Photo">
+    <!-- Hero Section -->
+    <header class="hero py-5 border-bottom">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8 col-md-7">
+                    <h1 class="display-4 fw-bold mb-2">Sanjeev Panday</h1>
+                    <p class="lead text-accent mb-3">Tech Owner · Lead Developer</p>
+                    <p class="text-secondary mb-4">
+                        Technical Leader and Solution Architect experienced in delivering secure, scalable, cloud-ready enterprise systems, with strong expertise in Java/Spring Boot, microservices, cloud platforms, and leading high-performing engineering teams.
+                    </p>
+                    <p class="text-secondary mb-4">
+                        I focus on aligning technology with real business outcomes through clean design, automation, DevOps, and strong engineering practices.
+                    </p>
+                    <a href="sanjeev-panday-resume.pdf" class="btn btn-primary btn-lg" download>
+                        <i class="bi bi-download me-2"></i>Download CV
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-5 text-center text-md-end">
+                    <img src="photo.png" alt="Profile Photo" class="img-fluid rounded-3 hero-photo shadow">
+                </div>
             </div>
         </div>
     </header>
 
-    <nav class="navbar">
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#care">What I Care About</a>
-        <a href="#projects">Projects</a>
-        <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom">
+        <div class="container">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-lg-4 gap-2">
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#care">What I Care About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main class="container">
+    <main class="container py-5">
 
         <!-- EXPERIENCE TIMELINE -->
-        <section id="experience">
-            <h2 class="section-title">Experience Timeline</h2>
+        <section id="experience" class="mb-5">
+            <h2 class="display-6 fw-bold mb-4 border-bottom pb-2">Experience Timeline</h2>
 
             <div class="timeline">
-
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Lead Developer / Architect — SITA Aero</h3>
-                        <span class="date">2022 — Present</span>
-                        <ul>
-                            <li>Lead architecture and engineering for border-control & biometric systems</li>
-                            <li>Designed systems for high-availability, resilience & scale</li>
-                            <li>Implemented threat-modelling and robust security controls</li>
-                            <li>Built CI/CD pipelines using Azure DevOps</li>
-                            <li>Integrated Innovatrics biometric solutions</li>
-                            <li>Implemented verifiable credential flows using Hyperledger Aries</li>
-                        </ul>
+                <div class="timeline-item">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+                                <h5 class="card-title fw-bold mb-0">Lead Developer / Architect — SITA Aero</h5>
+                                <span class="badge bg-primary">2022 — Present</span>
+                            </div>
+                            <ul class="mt-3 mb-0">
+                                <li>Lead architecture and engineering for border-control &amp; biometric systems</li>
+                                <li>Designed systems for high-availability, resilience &amp; scale</li>
+                                <li>Implemented threat-modelling and robust security controls</li>
+                                <li>Built CI/CD pipelines using Azure DevOps</li>
+                                <li>Integrated Innovatrics biometric solutions</li>
+                                <li>Implemented verifiable credential flows using Hyperledger Aries</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Senior Technical Lead — Provar</h3>
-                        <span class="date">2021 — 2022</span>
-                        <ul>
-                            <li>Integrated SauceLabs for comprehensive cross-browser testing</li>
-                            <li>Mentored and uplifted engineering team quality</li>
-                            <li>Led a team of 5 engineers delivering key product enhancements</li>
-                            <li>Upgraded product compatibility with latest macOS versions</li>
-                            <li>Built and delivered enterprise-grade Test Management Solution</li>
-                        </ul>
+                <div class="timeline-item">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+                                <h5 class="card-title fw-bold mb-0">Senior Technical Lead — Provar</h5>
+                                <span class="badge bg-primary">2021 — 2022</span>
+                            </div>
+                            <ul class="mt-3 mb-0">
+                                <li>Integrated SauceLabs for comprehensive cross-browser testing</li>
+                                <li>Mentored and uplifted engineering team quality</li>
+                                <li>Led a team of 5 engineers delivering key product enhancements</li>
+                                <li>Upgraded product compatibility with latest macOS versions</li>
+                                <li>Built and delivered enterprise-grade Test Management Solution</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Senior Software Developer — SITA Aero</h3>
-                        <span class="date">2017 — 2021</span>
-                        <ul>
-                            <li>Developed JMS-based messaging and integration solutions</li>
-                            <li>Integrated APIGEE and developed RESTful APIs with Spring Boot</li>
-                            <li>Used Swagger/OpenAPI for API design and documentation</li>
-                            <li>Performed thread & heap-dump analysis for performance tuning</li>
-                            <li>On-boarded new developers and led code-quality improvements</li>
-                        </ul>
+                <div class="timeline-item">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+                                <h5 class="card-title fw-bold mb-0">Senior Software Developer — SITA Aero</h5>
+                                <span class="badge bg-primary">2017 — 2021</span>
+                            </div>
+                            <ul class="mt-3 mb-0">
+                                <li>Developed JMS-based messaging and integration solutions</li>
+                                <li>Integrated APIGEE and developed RESTful APIs with Spring Boot</li>
+                                <li>Used Swagger/OpenAPI for API design and documentation</li>
+                                <li>Performed thread &amp; heap-dump analysis for performance tuning</li>
+                                <li>On-boarded new developers and led code-quality improvements</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Technical Lead — Infosys / EdgeVerve</h3>
-                        <span class="date">2008 — 2017</span>
-                        <ul>
-                            <li>Led large-scale Finacle CORE/CRM system integrations</li>
-                            <li>Executed third-party integrations (ABN) and host-integration projects</li>
-                            <li>Managed data migration, system design & delivery across teams</li>
-                            <li>Provided technical leadership on OOP/design patterns & mentoring</li>
-                        </ul>
+                <div class="timeline-item">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+                                <h5 class="card-title fw-bold mb-0">Technical Lead — Infosys / EdgeVerve</h5>
+                                <span class="badge bg-primary">2008 — 2017</span>
+                            </div>
+                            <ul class="mt-3 mb-0">
+                                <li>Led large-scale Finacle CORE/CRM system integrations</li>
+                                <li>Executed third-party integrations (ABN) and host-integration projects</li>
+                                <li>Managed data migration, system design &amp; delivery across teams</li>
+                                <li>Provided technical leadership on OOP/design patterns &amp; mentoring</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- SKILLS -->
-        <section id="skills">
-            <h2 class="section-title">Skills</h2>
+        <section id="skills" class="mb-5">
+            <h2 class="display-6 fw-bold mb-4 border-bottom pb-2">Skills</h2>
 
-            <div class="skills-grid">
-                <div>
-                    <h3>Backend & Architecture</h3>
-                    <ul>
-                        <li>Java (8-17), Spring Boot, Spring Security</li>
-                        <li>Microservices, API Gateways</li>
-                        <li>Event-driven architecture, modular design</li>
-                        <li>Scalability, performance optimisation & JVM tuning</li>
-                    </ul>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"><i class="bi bi-gear-fill text-primary me-2"></i>Backend &amp; Architecture</h5>
+                            <ul class="mt-3 mb-0">
+                                <li>Java (8-17), Spring Boot, Spring Security</li>
+                                <li>Microservices, API Gateways</li>
+                                <li>Event-driven architecture, modular design</li>
+                                <li>Scalability, performance optimisation &amp; JVM tuning</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Cloud, DevOps & Observability</h3>
-                    <ul>
-                        <li>Azure, Kubernetes, Docker</li>
-                        <li>CI/CD: Azure DevOps, GitHub Actions</li>
-                        <li>Dynatrace, ELK Stack, distributed tracing & monitoring</li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"><i class="bi bi-cloud-fill text-primary me-2"></i>Cloud, DevOps &amp; Observability</h5>
+                            <ul class="mt-3 mb-0">
+                                <li>Azure, Kubernetes, Docker</li>
+                                <li>CI/CD: Azure DevOps, GitHub Actions</li>
+                                <li>Dynatrace, ELK Stack, distributed tracing &amp; monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Data & Messaging</h3>
-                    <ul>
-                        <li>PostgreSQL, Oracle, SQL Server</li>
-                        <li>Apache Cassandra, data modelling</li>
-                        <li>Kafka, JMS, IBM MQ</li>
-                        <li>API integration, APIGEE, Swagger/OpenAPI</li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"><i class="bi bi-database-fill text-primary me-2"></i>Data &amp; Messaging</h5>
+                            <ul class="mt-3 mb-0">
+                                <li>PostgreSQL, Oracle, SQL Server</li>
+                                <li>Apache Cassandra, data modelling</li>
+                                <li>Kafka, JMS, IBM MQ</li>
+                                <li>API integration, APIGEE, Swagger/OpenAPI</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Security & Engineering Practices</h3>
-                    <ul>
-                        <li>JWT, OAuth2, OpenID Connect</li>
-                        <li>Threat modelling & secure API design</li>
-                        <li>TDD, clean architecture, design patterns</li>
-                        <li>Engineering leadership, mentoring & code reviews</li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"><i class="bi bi-shield-lock-fill text-primary me-2"></i>Security &amp; Engineering</h5>
+                            <ul class="mt-3 mb-0">
+                                <li>JWT, OAuth2, OpenID Connect</li>
+                                <li>Threat modelling &amp; secure API design</li>
+                                <li>TDD, clean architecture, design patterns</li>
+                                <li>Engineering leadership, mentoring &amp; code reviews</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- WHAT I CARE ABOUT -->
-        <section id="care">
-            <h2 class="section-title">What I Care About</h2>
+        <section id="care" class="mb-5">
+            <h2 class="display-6 fw-bold mb-4 border-bottom pb-2">What I Care About</h2>
 
-            <ul class="care-list">
-                <li><strong>Secure, resilient architectures</strong> that operate reliably at scale.</li>
-                <li><strong>Clarity and simplicity</strong> in design decisions, communication and trade-offs.</li>
-                <li><strong>Operational excellence</strong> — observability, alerts, SLOs, automation.</li>
-                <li><strong>Engineering culture & excellence</strong> — mentoring, reviews, continuous improvement.</li>
-                <li><strong>Performance & reliability</strong> — removing bottlenecks, tuning JVMs, optimising throughput.</li>
-                <li><strong>Security-first mindset</strong> — identity, access control, threat modelling, safe APIs.</li>
-                <li><strong>Continuous learning & innovation</strong> — from digital identity to cloud-native patterns.</li>
-            </ul>
+            <div class="row g-3">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-0"><strong>Secure, resilient architectures</strong> that operate reliably at scale.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-0"><strong>Clarity and simplicity</strong> in design decisions, communication and trade-offs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-0"><strong>Operational excellence</strong> — observability, alerts, SLOs, automation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-0"><strong>Engineering culture &amp; excellence</strong> — mentoring, reviews, continuous improvement.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-0"><strong>Performance &amp; reliability</strong> — removing bottlenecks, tuning JVMs, optimising throughput.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-0"><strong>Security-first mindset</strong> — identity, access control, threat modelling, safe APIs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-0"><strong>Continuous learning &amp; innovation</strong> — from digital identity to cloud-native patterns.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="project">
-                <h3>Cassandra Query UI</h3>
-                <p>A cross-platform React desktop tool that lets users execute CQL queries via a form-based interface to Apache Cassandra.</p>
-                <a href="https://github.com/Sanjeev-Panday/QueryUI">View on GitHub →</a>
+        <section id="projects" class="mb-5">
+            <h2 class="display-6 fw-bold mb-4 border-bottom pb-2">Projects</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"><i class="bi bi-folder-fill text-primary me-2"></i>Cassandra Query UI</h5>
+                            <p class="card-text text-secondary">A cross-platform React desktop tool that lets users execute CQL queries via a form-based interface to Apache Cassandra.</p>
+                            <a href="https://github.com/Sanjeev-Panday/QueryUI" class="btn btn-outline-primary">
+                                <i class="bi bi-github me-2"></i>View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- AWARDS -->
-        <section id="awards">
-            <h2 class="section-title">Awards & Certifications</h2>
-            <ul>
-                <li>Becoming an Aries Developer — Hyperledger Aries</li>
-                <li>Apache Cassandra 3 Developer Certification</li>
-                <li>TechGig Code Gladiator Finalist (2018)</li>
-                <li>Provar Hackathon Winner — Mission Mars (2022)</li>
-                <li>Stanford Online: Mastering Generative AI for Product Innovation</li>
-                <li>Stanford Online: Leading Innovation</li>
-            </ul>
+        <section id="awards" class="mb-5">
+            <h2 class="display-6 fw-bold mb-4 border-bottom pb-2">Awards &amp; Certifications</h2>
+            
+            <div class="row g-3">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start">
+                        <i class="bi bi-award-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-2">Becoming an Aries Developer — Hyperledger Aries</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start">
+                        <i class="bi bi-patch-check-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-2">Apache Cassandra 3 Developer Certification</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start">
+                        <i class="bi bi-trophy-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-2">TechGig Code Gladiator Finalist (2018)</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start">
+                        <i class="bi bi-trophy-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-2">Provar Hackathon Winner — Mission Mars (2022)</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start">
+                        <i class="bi bi-mortarboard-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-2">Stanford Online: Mastering Generative AI for Product Innovation</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-start">
+                        <i class="bi bi-mortarboard-fill text-primary me-3 mt-1"></i>
+                        <p class="mb-2">Stanford Online: Leading Innovation</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CONTACT -->
-        <section id="contact">
-            <h2 class="section-title">Contact</h2>
-            <p>If you'd like to connect about backend architecture, cloud systems, identity or microservices — let’s talk.</p>
-            <ul>
-                <li>Email: <a href="mailto:sanjeev.panday84@gmail.com">sanjeev.panday84@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/sanjeev-panday/">linkedin.com/in/Sanjeev-Panday</a></li>
-                <li>GitHub: <a href="https://github.com/Sanjeev-Panday">github.com/Sanjeev-Panday</a></li>
-            </ul>
+        <section id="contact" class="mb-5">
+            <h2 class="display-6 fw-bold mb-4 border-bottom pb-2">Contact</h2>
+            <p class="text-secondary mb-4">If you'd like to connect about backend architecture, cloud systems, identity or microservices — let's talk.</p>
+            
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-envelope-fill text-primary me-3 fs-4"></i>
+                        <a href="mailto:sanjeev.panday84@gmail.com" class="text-decoration-none">sanjeev.panday84@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-linkedin text-primary me-3 fs-4"></i>
+                        <a href="https://www.linkedin.com/in/sanjeev-panday/" class="text-decoration-none">linkedin.com/in/Sanjeev-Panday</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-github text-primary me-3 fs-4"></i>
+                        <a href="https://github.com/Sanjeev-Panday" class="text-decoration-none">github.com/Sanjeev-Panday</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>© <span id="year"></span> Sanjeev Panday</p>
+    <footer class="border-top py-4 text-center text-secondary">
+        <div class="container">
+            <p class="mb-0">© <span id="year"></span> Sanjeev Panday</p>
+        </div>
     </footer>
 
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
+        // Set current year
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Auto dark/light mode detection
+        (function() {
+            const getPreferredTheme = () => {
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            };
+            const setTheme = (theme) => {
+                document.documentElement.setAttribute('data-bs-theme', theme);
+            };
+            setTheme(getPreferredTheme());
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                setTheme(getPreferredTheme());
+            });
+        })();
     </script>
 </body>
 </html>
