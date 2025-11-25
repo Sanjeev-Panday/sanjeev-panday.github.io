@@ -15,7 +15,4 @@ Designing and leading the delivery of secure, scalable systems across cloud and 
 
 ### 📫 Connect
 - **LinkedIn:** https://www.linkedin.com/in/sanjeev-panday  
----
 
-_Thanks for visiting my GitHub._
-Portfolio Page
